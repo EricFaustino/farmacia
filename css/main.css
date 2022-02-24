@@ -1,0 +1,91 @@
+.carro * {
+    position: relative;
+}
+
+.remover-500 {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .carro {
+        display: block;
+        width: 400px !important;
+        height: auto;
+    }
+    .carro thead {
+        display: none;
+    }
+    .carro>*,
+    .carro tr,
+    .carro td {
+        display: block;
+    }
+    .carro tbody tr td {
+        padding-left: 30% !important;
+        margin-bottom: -15px;
+    }
+    .carro tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+    .carro tbody tr td:before {
+        color: #999;
+        font-weight: unset;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .carro tbody tr {
+        font-size: 16px;
+    }
+    .carro tbody tr td:nth-child(1):before {
+        content: "codigo: ";
+        font-weight: bold;
+        color: #000;
+    }
+    .carro tbody tr td:nth-child(2):before {
+        content: "Nome: ";
+        font-weight: bold;
+        color: #000;
+    }
+    .carro tbody tr td:nth-child(3):before {
+        content: "Concentração: ";
+        font-weight: bold;
+        color: #000;
+    }
+    .carro tbody tr td:nth-child(4):before {
+        content: "Adicional: ";
+        font-weight: bold;
+        color: #000;
+    }
+    .carro tbody tr td:nth-child(5):before {
+        content: "Preço: ";
+        font-weight: bold;
+        color: #000;
+    }
+    .carro tbody tr td:nth-child(6):before {
+        content: "";
+        font-weight: bold;
+        color: #000;
+    }
+    .remover-500 {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-right: 15px;
+    }
+    .teste {
+        width: 50%;
+    }
+}
+
+.imagen-carrito {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.contador {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
